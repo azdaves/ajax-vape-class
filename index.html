@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
-  <title>AJAX with JavaScript</title>
+  <title>AJAX with JavaScript and Officer Dave WUSD</title>
   <script>
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'sidebar.html');
+    xhr.open('GET', 'answer.html');
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         document.getElementById('ajax').innerHTML = xhr.responseText;
@@ -30,7 +30,7 @@
           <div class="heading">
             <h2>Where can you find acrylamide and crotonaldehyde?</h2>
           </div>
-          <button id="load" onclick="sendAJAX()" class="button">I give up!</button>
+          <button id="load" onclick="sendAJAX()" class="button">Tell Me!</button>
           <ul id="ajax">
 
           </ul>
@@ -38,6 +38,18 @@
       </div>
     </div>
   </div>
+  <div>
+
+    <p class="spoiler">
+      <span>Formaldehyde is dangerous and if you vape, it's in your lungs. Gross!</span>
+    </p>
+    <p class="spoiler">
+      <span>e-liquids become chemically unstable when vaporized.</span>
+    </p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="vape.js"></script>
 </body>
 
 </html>
